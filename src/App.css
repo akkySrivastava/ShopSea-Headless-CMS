@@ -1,0 +1,55 @@
+body,
+html {
+  background-color: red;
+  margin: 0px;
+  padding: 0px;
+}
+
+#products #cardTitle {
+  line-height: 24px;
+  font-size: 16px;
+  color: #0f1111;
+}
+#products #cardText {
+  overflow: hidden;
+  max-height: 10rem;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  color: #3b4848;
+}
+
+@media (max-width: 991px) {
+  #productDetails {
+    overflow: auto;
+  }
+}
+@media (min-width: 991px) {
+  #productDetails {
+    height: 100vh;
+  }
+}
+#productDetails #firstCol {
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  #productDetails #firstCol {
+    margin-top: 0px;
+  }
+}
+#productDetails #secondCol {
+  margin-top: 30px;
+}
+@media (max-width: 991px) {
+  #productDetails #secondCol {
+    margin-top: 0px;
+  }
+}
+#productDetails #thirdCol {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+#productDetails #overview {
+  overflow: scroll;
+  max-height: 70vh;
+}

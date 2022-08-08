@@ -1,0 +1,65 @@
+//Base Sass
+@import "base/mixin.scss";
+@import "base/reset.scss";
+@import "base/variables.scss";
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+#products {
+    #cardTitle {
+        line-height: 24px;
+        font-size: 16px;
+        color: $h2cardtitle;
+    }
+
+    #cardText {
+        overflow: hidden;
+        max-height: 10rem;
+        text-overflow: ellipsis;
+        font-size: 14px;
+        color: $cardTextColor;
+    }
+}
+
+#productDetails {
+    //767px:mobile 991px:tablet
+    @media (max-width: 991px) {
+        // color: yellowgreen;
+        overflow: auto;
+    }
+    @media (min-width: 991px) {
+        // color: pink;
+        height: 100vh;
+    }
+
+    #firstCol {
+        margin-top: 30px;
+        @media (max-width: 991px) {
+            margin-top: 0px;
+        }
+    }
+    #secondCol {
+        margin-top: 30px;
+        @media (max-width: 991px) {
+            margin-top: 0px;
+        }
+    }
+
+    #thirdCol {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+    }
+    #overview {
+        overflow: scroll;
+        max-height: 70vh;
+    }
+}
+
+// @media (max-width: 767px) {
+//     color: red;
+// }
